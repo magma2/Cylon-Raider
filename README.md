@@ -30,6 +30,7 @@ Does not support WPS-Enabled Attacks (also known as "Reaver"), see bottom "Why N
 This automatically makes the directory, sets the proper permissions, and also drops the primary scripts into your nethunter device's /root directory (see scripts)
 
 # Script Features and Recommended Order of Operations
+Steps 1 to 5 covered here in this video: https://raw.githubusercontent.com/tanc7/Cylon-Raider/master/How-To-Videos/How-To-Video-Wireless-Attack-Lite.webm
 
 STEP ONE: Insert External wireless card + OTG cable into Nethunter tablet/phone, and run /root/monitorMode.sh
 
@@ -42,6 +43,8 @@ STEP FOUR: Open another nethunter terminal and run /root/replayAttack.sh, usuall
 STEP FIVE: It's done when you see on the top right corner of the terminal "WPA Handshake: BSSID". You can GTFO out of there now
 
 GO HOME: And start cracking that password with /root/crack_WPA_handshake.sh, you do not need to be around the attacked AP anymore. Not until you crack that password!
+
+Cracking handshake covered here: https://raw.githubusercontent.com/tanc7/Cylon-Raider/master/How-To-Videos/How-To-Crack-Handshake.webm
 
 # Other Scripts Below
 
