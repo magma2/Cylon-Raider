@@ -8,6 +8,10 @@ import operator
 import sys
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
+
+# variable = __import__('module').class.variable
+
+
 # os.system('cat /root/WirelessAttackLite/banner_CrackHead.txt')
 def airmon(): #No need for classes here, just one variable
     capture_Interface = str(raw_input("Enter the wireless INTERFACE that you want to capture with: "))
