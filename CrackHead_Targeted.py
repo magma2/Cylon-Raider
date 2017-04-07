@@ -26,7 +26,7 @@ user_input = airodump_Parameters_Targeted.from_input()
 print 'Beginning targeted capture'
 timestr = (time.strftime("%Y%m%d-%H%M%S"))
 # make it so that I create a folder with that same instance of handshake capture
-airodump_capture_filepath = "/root/WirelessAttackLite/logs/"
+airodump_capture_filepath = "/root/Cylon-Raider/logs/"
 airodump_capture_folder = airodump_capture_filepath + user_input.capture_BSSID + '/'
 make_Folder_String = "mkdir {0}".format(airodump_capture_folder)
 os.system(make_Folder_String)
@@ -59,7 +59,7 @@ os.system(cmd_String)
 # Still doesnt work. I don't think declaring a class is a good idea, but then again I am getting hings from Stackoverflow, which is a terrible source of a straight answer
 # now open a new terminal and run aireplay
 # actually that wont work because gnome-terminal does not exist on Kali Nethunter
-# os.system("gnome-terminal -e 'bash -c \"python /root/WirelessAttackLite/CrackHead_Replay.py; exec bash\"'")
+# os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/CrackHead_Replay.py; exec bash\"'")
 
         # Doesnt work. Might as well try importing this module into Replay
 # deauth_Cmd_String = "aireplay-ng --deauth {0} -a {1} --ignore-negative-one wlan1mon".format(
