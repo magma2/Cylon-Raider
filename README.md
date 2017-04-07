@@ -1,5 +1,9 @@
-# Wireless-Attack-Lite
-Lightweight Version of Wifi-Attack-Autoloader for Outdated Releases of Kali Nethunter (Python 2.7.9)
+# Cylon Raider (Formerly Known as Wireless-Attack-Lite)
+Easy and quick automation of Aircrack-ng "Replay-Attacks", targeting WPA2-PSK encrypted routers (most home NATed networks and many small businesses). Guaranteed to capture the 4-way handshake of a decently populated router in under 10 minutes (at least 1 or 2 people logged onto router to properly de-authenticate and listen for their creds). 
+
+
+
+Lightweight Version of Wifi-Attack-Autoloader for Outdated Releases of Kali Nethunter Devices(Python 2.7.9)
 Designed to Capture the Handshake in Record Time so you can GTFO out of that area!
 Does not support WPS-Enabled Attacks (also known as "Reaver"), see bottom "Why No WPS?"
 
@@ -10,26 +14,39 @@ Does not support WPS-Enabled Attacks (also known as "Reaver"), see bottom "Why N
 
 # Installation
 1. Unzip the contents of the repo (or even better, git clone it)
-2. Run autoInstaller.sh
-3. Navigate to /root/WirelessAttackLite
-4. For NetHunter devices you want to use the /KaliTerminalScripts folder instead (see below)
 
-# General Steps of Operation
+"cd /tmp"
 
-Navigate to /root/WirelessAttackLite/KaliTerminalScripts
+"git clone https://github.com/tanc7/Cylon-Raider"
 
-1. Run monitorMode.sh to put your external wireless card + OTG cable into monitor mode
-2. Ctrl + C to freeze monitor mode when you find a target
-3. Locate a BSSID of your target and then run targetedMode.sh
-4. In targetedMode.sh enter the BSSID MAC of target to only capture packets of that device
-5. Open a new terminal and run replayAttack.sh, enter BSSID MAC + # of deauth packets you want to send (recommended between 100 to 1000)
-6. If you are successful with capturing the 4-way handshake, the terminal running targetedMode.sh will say WPA-Handshake on the top-right
-7. You should LEAVE the area as soon as you capture the 4-way handshake. 
-8. Cracking the handshake could be done at home 
+2. Run autoInstallerNethunter.sh
 
-Steps 1 to 7 only takes at most, 10 minutes
+"cd /tmp/Cylon-Raider/"
 
-Step 8 could take days depending on the quality of your wordlist (Dictionary Attack)
+"chmod 777 autoInstallerNethunter.sh"
+
+"./autoInstallerNethunter.sh"
+
+This automatically makes the directory, sets the proper permissions, and also drops the primary scripts into your nethunter device's /root directory (see scripts)
+
+# Script Features and Recommended Order of Operations
+
+STEP ONE: Insert External wireless card + OTG cable into Nethunter tablet/phone, and run /root/monitorMode.sh
+STEP TWO: Run /root/scanMode.sh, wait patiently for all wireless APs to show up, press Ctrl+C to freeze it and copy/paste the BSSID/MAC of the device you want to capture the handshake of
+STEP THREE: Run /root/targetedMode.sh, enter the Channel and BSSID of the device you are targeted
+STEP FOUR: Open another nethunter terminal and run /root/replayAttack.sh, usually between 100 to 2000 packets is recommended
+STEP FIVE: It's done when you see on the top right corner of the terminal "WPA Handshake: BSSID". You can GTFO out of there now
+GO HOME: And start cracking that password with /root/crack_WPA_handshake.sh, you do not need to be around the attacked AP anymore. Not until you crack that password!
+
+# Other Scripts Below
+
+# UNCLOAK HIDDEN NETWORKS: 
+
+Adopted from Violent Python, /root/hiddenNetworkSniffer.sh, give it some time. First it'll detect the BSSID, and then a few minutes later it'll reveal the SSID. The name of the SSID isn't the important part though, and the owner may as well have changed it. To me, it's the BSSID/MAC that counts
+
+# CREDIT CARD SNIFFER:
+
+Should be used either with Monitor Mode On, OR, even better, after you cracked the password and logged back into their network. 
 
 # Why No WPS?
 Attacking WPS-Enabled Services means that the admin or owner of the router enabled WPS. You cannot use Reaver against some router that doesnt have WPS Enabled. 
