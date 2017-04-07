@@ -32,10 +32,15 @@ This automatically makes the directory, sets the proper permissions, and also dr
 # Script Features and Recommended Order of Operations
 
 STEP ONE: Insert External wireless card + OTG cable into Nethunter tablet/phone, and run /root/monitorMode.sh
+
 STEP TWO: Run /root/scanMode.sh, wait patiently for all wireless APs to show up, press Ctrl+C to freeze it and copy/paste the BSSID/MAC of the device you want to capture the handshake of
+
 STEP THREE: Run /root/targetedMode.sh, enter the Channel and BSSID of the device you are targeted
+
 STEP FOUR: Open another nethunter terminal and run /root/replayAttack.sh, usually between 100 to 2000 packets is recommended
+
 STEP FIVE: It's done when you see on the top right corner of the terminal "WPA Handshake: BSSID". You can GTFO out of there now
+
 GO HOME: And start cracking that password with /root/crack_WPA_handshake.sh, you do not need to be around the attacked AP anymore. Not until you crack that password!
 
 # Other Scripts Below
