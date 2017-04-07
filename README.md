@@ -1,6 +1,8 @@
 # Cylon Raider (Formerly Known as Wireless-Attack-Lite)
 Easy and quick automation of Aircrack-ng "Replay-Attacks", targeting WPA2-PSK encrypted routers (most home NATed networks and many small businesses). Guaranteed to capture the 4-way handshake of a decently populated router in under 10 minutes (at least 1 or 2 people logged onto router to properly de-authenticate and listen for their creds). 
 
+It can also detect and decloak hidden networks (see UNCLOAK HIDDEN NETWORKS) below
+
 
 
 Lightweight Version of Wifi-Attack-Autoloader for Outdated Releases of Kali Nethunter Devices(Python 2.7.9)
