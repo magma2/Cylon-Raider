@@ -72,12 +72,31 @@ def aircrack():
 def REAVER():
     os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/Heavy-Raider/HeavyRaider.py; exec bash\"'")
     main()
-    return()
+    return
 
 def RouterSploit():
-    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/routersploit/rsf.py; exec bash\"'")
-    main()
-    return()
+    opt_List = [
+        '\n\t#0. Return to Main Menu',
+        'INSTALL. Install the RouterSploit Framework',
+        '#1. Run the RouterSploit Framework'
+    ]
+
+    print ("\n\t".join(opt_List))
+    opt_Choice = str(raw_input("Enter a OPTION, or type INSTALL in all caps to install RouterSploit: "))
+
+    if opt_Choice == "1":
+        os.system('clear')
+        os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/routersploit/rsf.py; exec bash\"'")
+        main()
+    elif opt_Choice == "INSTALL":
+        os.system('clear')
+        print 'Git Cloning RouterSploit into your Cylon-Raider Installation'
+        os.system('cd /root/Cylon-Raider')
+        os.system('git clone https://github.com/reverse-shell/routersploit.git')
+        print 'Routersploit install complete'
+        main()
+    return
+
 def main():
     opt_List = [
         '\n\t#1. AIRMON, start up the capture interface',
