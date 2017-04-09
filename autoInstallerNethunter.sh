@@ -1,4 +1,5 @@
 chmod 777 ./ *
+chmod 777 ./KaliTerminalScripts/*
 echo Changed all files in directory to executable
 mkdir /root/Cylon-Raider
 echo Creating directory /root/Cylon-Raider
