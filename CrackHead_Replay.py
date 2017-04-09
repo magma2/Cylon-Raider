@@ -35,6 +35,9 @@ import sys
 # New idea is just to completely rewrite CrackHead_Targeted and CrackHead_Replay
 
 # For now, time to retest to make sure that the basic operations of both work fine
+
+os.system('cat /root/Cylon-Raider/banner_aireplay.txt')
+
 class aireplay_Parameters(object):
 
     def __init__(self, capture_BSSID, amount_Deauth_Packets):

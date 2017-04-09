@@ -9,6 +9,7 @@ import sys
 # sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 import time
 
+os.system('cat /root/Cylon-Raider/banner_airodump.txt')
 class airodump_Parameters_Targeted(object):
 
     def __init__(self, capture_Channel, capture_BSSID):

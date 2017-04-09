@@ -10,6 +10,7 @@ sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets windo
 #aircrack-ng WPAcrack-01.cap -w /pentest/passwords/wordlists/darkc0de
 # aircrack-ng <pcap file> -w <wordlist>
 
+os.system('cat /root/Cylon-Raider/banner_CrackHead.txt')
 class aircrack_Parameters(object):
     def __init__(self, capture_File, path_Wordlist):
         self.capture_File = capture_File
