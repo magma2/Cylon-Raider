@@ -97,6 +97,11 @@ def RouterSploit():
         main()
     return
 
+def Decloaker():
+    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/sniffHidden.py; exec bash\"'")
+    main()
+    return
+
 def main():
     opt_List = [
         '\n\t#1. AIRMON, start up the capture interface',
@@ -104,7 +109,8 @@ def main():
         '#3. AIREPLAY, send deauthorization packets to disconnect target clients and capture the 4-way handshake',
         '#4. AIRCRACK, attempt to crack the 4-way handshake with a wordlist (dictionary attack)',
         '#5. HEAVY-RAIDER, run Reaver, the WPS Protection PIN brute forcer',
-        '#6. RSF, run Router-Sploit, for exploitation stages of Wi-Fi Hacking'
+        '#6. RSF, run Router-Sploit, for exploitation stages of Wi-Fi Hacking',
+        '#7. HIDDEN NETWORK DECLOAKER, adapted from Violent Python by TJ OConnor'
     ]
 
     print ("\n\t".join(opt_List))
@@ -128,6 +134,9 @@ def main():
     elif opt_Choice == "6":
         os.system('clear')
         RouterSploit()
+    elif opt_Choice == "7":
+        os.system('clear')
+        Decloaker()
     else:
         print 'You have entered a invalid option'
         main()
