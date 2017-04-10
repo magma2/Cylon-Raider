@@ -12,15 +12,15 @@ import time
 os.system('cat /root/Cylon-Raider/banner_airodump.txt')
 class airodump_Parameters_Targeted(object):
 
-    def __init__(self, capture_Channel, capture_BSSID):
-        self.capture_Channel = capture_Channel
+    def __init__(self, capture_BSSID, capture_Channel):
         self.capture_BSSID = capture_BSSID
+        self.capture_Channel = capture_Channel
 
     @classmethod
     def from_input(cls):
         return cls(
-            str(raw_input("Enter the CHANNEL of the device you want to TARGET: ")),
-            str(raw_input("Enter the BSSID/Broadcast MAC Address of your TARGET: "))
+            str(raw_input("Enter the BSSID/Broadcast MAC Address of your TARGET: ")),
+            str(raw_input("Enter the CHANNEL of the device you want to TARGET: "))
                     )
 
 user_input = airodump_Parameters_Targeted.from_input()

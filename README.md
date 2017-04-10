@@ -58,13 +58,9 @@ Adopted from Violent Python, /root/hiddenNetworkSniffer.sh, give it some time. F
 
 Should be used either with Monitor Mode On, OR, even better, after you cracked the password and logged back into their network. 
 
-# Why WPS-cracking is not recommended? (Changed Title since I added Reaver into Raider as "Heavy Raider")
+# Why No WPS?
 Attacking WPS-Enabled Services means that the admin or owner of the router enabled WPS. You cannot use Reaver against some router that doesnt have WPS Enabled. 
 
 Secondly, the disadvantages of WPS is becoming more of a mainstream knowledge. Less and less wireless APs are employing WPS. 
 
-But most importantly, you cannot employ "guerilla tactics" of "hit-and-run" and "grab that handshake". There is no static handshake to steal. Instead the creds are uniquely generated PER SESSION. And that means, you are going to be out there, for many hours trying to crack it.
-
-If you are that determined to mess with it, then you should have received explicit permission from your clients that authorized you to run a pentest against it. 
-
-For more information please see the officially repo info on Reaver: http://tools.kali.org/wireless-attacks/reaver
+If you have the fortune of finding a WPS-Enabled AP, then by all means, use Reaver because that is now the best option: http://tools.kali.org/wireless-attacks/reaver

