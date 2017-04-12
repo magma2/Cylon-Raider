@@ -68,5 +68,4 @@ Another question, "Do you want to have your victim freak out and send the dogs a
 Attacking WPS-Enabled Services means that the admin or owner of the router enabled WPS. You cannot use Reaver against some router that doesnt have WPS Enabled. 
 
 Secondly, the disadvantages of WPS is becoming more of a mainstream knowledge. Less and less wireless APs are employing WPS. 
-
-If you have the fortune of finding a WPS-Enabled AP, then by all means, use Reaver because that is now the best option: http://tools.kali.org/wireless-attacks/reaver
+http://tools.kali.org/wireless-attacks/reaver
