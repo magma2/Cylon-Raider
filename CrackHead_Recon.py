@@ -4,10 +4,10 @@
 import os
 import socket
 import operator
-# from termcolor import colored
+# #from termcolor import colored
 import sys
 
-os.system('cat /root/Cylon-Raider/banner_airmon.txt')
+# os.system('cat /root/Cylon-Raider-Lite/banner_airmon.txt')
 
 # sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 

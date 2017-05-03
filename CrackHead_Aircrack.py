@@ -4,13 +4,13 @@
 import os
 import socket
 import operator
-# from termcolor import colored
+# #from termcolor import colored
 import sys
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 #aircrack-ng WPAcrack-01.cap -w /pentest/passwords/wordlists/darkc0de
 # aircrack-ng <pcap file> -w <wordlist>
 
-os.system('cat /root/Cylon-Raider/banner_CrackHead.txt')
+# os.system('cat /root/Cylon-Raider-Lite/banner_CrackHead.txt')
 class aircrack_Parameters(object):
     def __init__(self, capture_File, path_Wordlist, found_password_file):
         self.capture_File = capture_File

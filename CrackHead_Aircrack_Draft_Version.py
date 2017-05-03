@@ -4,13 +4,13 @@
 import os
 import socket
 import operator
-# from termcolor import colored
+# #from termcolor import colored
 import sys
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 #aircrack-ng WPAcrack-01.cap -w /pentest/passwords/wordlists/darkc0de
 # aircrack-ng <pcap file> -w <wordlist>
 
-os.system('cat /root/Cylon-Raider/banner_CrackHead.txt')
+os.system('cat /root/Cylon-Raider-Lite/banner_CrackHead.txt')
 
 # Elimiante the classes
 # class aircrack_Parameters(object):
@@ -33,7 +33,7 @@ def main():
     # so Aircrack-ng's syntax, for output file -o does NOT support a full directory specified. It only supports the CURRENT directory to output to
 
     # nope doenst work either
-    os.system('cd /root/Cylon-Raider/logs/FOUND_PASSWORDS') # that means this is the solution, automatically navigating the terminal to the desired directory
+    os.system('cd /root/Cylon-Raider-Lite/logs/FOUND_PASSWORDS') # that means this is the solution, automatically navigating the terminal to the desired directory
     capture_File = str(raw_input("Enter the CAPTURE FILE path: "))
     path_Wordlist = str(raw_input("Enter the WORDLIST path: "))
     found_password_file = str(raw_input("Name your OUTPUT file: "))
@@ -42,7 +42,7 @@ def main():
 
     # cannot even prepend a directory change. Alright, i'll just leave that out of the release
 
-    # found_password_folder = '/root/Cylon-Raider/logs/FOUND_PASSWORDS/'
+    # found_password_folder = '/root/Cylon-Raider-Lite/logs/FOUND_PASSWORDS/'
     # found_password_path = found_password_folder + found_password_file + '.txt'
 
     # Okay, tested the syntaxc
@@ -51,7 +51,7 @@ def main():
     # This doesnt work for some reason
     # found_password_filename = user_input.capture_File
     # found_password_file = found_password_filename + '.txt'
-    # found_password_folder = '/root/Cylon-Raider/logs/FOUND_PASSWORDS/'
+    # found_password_folder = '/root/Cylon-Raider-Lite/logs/FOUND_PASSWORDS/'
     # found_password_path = found_password_folder + found_password_file
 
     # Neither does this but I will just leave this code in

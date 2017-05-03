@@ -58,14 +58,9 @@ Adopted from Violent Python, /root/hiddenNetworkSniffer.sh, give it some time. F
 
 Should be used either with Monitor Mode On, OR, even better, after you cracked the password and logged back into their network. 
 
-# Why is WPS PIN Cracking not Recommended? (Changed from "Why No WPS")
-
-I am not exactly sure why this README update reverted. It was supposed to be like this since the Heavy-Raider module launched. But from all the TLDR bs below, the question I want to ask you, the user, is... "Do you want to spend 10 hours creeping outside someone's house, cracking a WPS pin because there is no actual handshake (for WPS)?". By applying the "guerilla warfare tactic" using the "Standard Cylon Raider procedure", I can capture the handshake (of a decently populated router) in less than ten minutes (10 being pretty excessive actually), go back home, start up Aircrack-ng and make me a sandwich.
-
-Another question, "Do you want to have your victim freak out and send the dogs after you? Or a cop to crack a T-baton over your head?" 
-
-
+# Why No WPS?
 Attacking WPS-Enabled Services means that the admin or owner of the router enabled WPS. You cannot use Reaver against some router that doesnt have WPS Enabled. 
 
 Secondly, the disadvantages of WPS is becoming more of a mainstream knowledge. Less and less wireless APs are employing WPS. 
-http://tools.kali.org/wireless-attacks/reaver
+
+If you have the fortune of finding a WPS-Enabled AP, then by all means, use Reaver because that is now the best option: http://tools.kali.org/wireless-attacks/reaver

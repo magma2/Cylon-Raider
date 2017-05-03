@@ -4,15 +4,15 @@
 import os
 import socket
 import operator
-# from termcolor import colored
+# #from termcolor import colored
 import sys
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
 
 # variable = __import__('module').class.variable
 
-os.system('cat /root/Cylon-Raider/cylonraider_banner.txt')
-# os.system('cat /root/Cylon-Raider/banner_CrackHead.txt')
+# os.system('cat /root/Cylon-Raider-Lite/cylonraider_banner.txt')
+# os.system('cat /root/Cylon-Raider-Lite/banner_CrackHead.txt')
 def airmon(): #No need for classes here, just one variable
     # capture_Interface = str(raw_input("Enter the wireless INTERFACE that you want to capture with: "))
     capture_Interface = 'wlan1'
@@ -32,7 +32,7 @@ def airmon(): #No need for classes here, just one variable
 
 def airodump():
 
-    os.system('cat /root/Cylon-Raider/banner_airodump.txt')
+    # os.system('cat /root/Cylon-Raider-Lite/banner_airodump.txt')
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. INFORMATION GATHERING, start Airodump to look for a good target to attack',
@@ -44,14 +44,16 @@ def airodump():
 
     if opt_Choice == "1":
         os.system('clear')
-        os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/CrackHead_Recon.py; exec bash\"'")
+        # os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/CrackHead_Recon.py; exec bash\"'")
+        os.system("python /root/Cylon-Raider-Lite/CrackHead_Recon.py")
         airodump()
     elif opt_Choice == "0":
         os.system('clear')
         main()
     elif opt_Choice == "2":
         os.system('clear')
-        os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/CrackHead_Targeted.py; exec bash\"'")
+        # os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/CrackHead_Targeted.py; exec bash\"'")
+        os.system("python /root/Cylon-Raider-Lite/CrackHead_Targeted.py")
         airodump()
         return
     else:
@@ -61,17 +63,20 @@ def airodump():
 
 
 def aireplay():
-    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/CrackHead_Replay.py; exec bash\"'")
+    # os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/CrackHead_Replay.py; exec bash\"'")
+    os.system("python /root/Cylon-Raider-Lite/CrackHead_Replay.py")
     main()
     return
 
 def aircrack():
-    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/CrackHead_Aircrack.py; exec bash\"'")
+    # os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/CrackHead_Aircrack.py; exec bash\"'")
+    os.system("python /root/Cylon-Raider-Lite/CrackHead_Aircrack.py")
     main()
     return
 
 def REAVER():
-    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/Heavy-Raider/HeavyRaider.py; exec bash\"'")
+    # os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/Heavy-Raider/HeavyRaider.py; exec bash\"'")
+    os.system("python /root/Cylon-Raider-Lite/Heavy-Raider/HeavyRaider.py")
     main()
     return
 
@@ -87,7 +92,9 @@ def RouterSploit():
 
     if opt_Choice == "1":
         os.system('clear')
-        os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/routersploit/rsf.py; exec bash\"'")
+        # os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/routersploit/rsf.py; exec bash\"'")
+        os.system("python /root/Cylon-Raider-Lite/routersploit/rsf.py")
+        os.system("")
         main()
     elif opt_Choice == "INSTALL":
         os.system('clear')
@@ -99,7 +106,8 @@ def RouterSploit():
     return
 
 def Decloaker():
-    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/sniffHidden.py; exec bash\"'")
+    # os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/sniffHidden.py; exec bash\"'")
+    os.system("python /root/Cylon-Raider-Lite/sniffHidden.py")
     main()
     return
 
@@ -119,9 +127,14 @@ def client_mac_targeting():
 # syntax
 # aireplay-ng --deauth 1000 -c 9C:d2:1e:61:8b:a1 -a 80:2a:a8:1b:e9:29 --ignore-negative-one wlan1mon
 
-    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/Client_Mac_Targeting.py; exec bash\"'")
+    # os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/Client_Mac_Targeting.py; exec bash\"'")
+    os.system("python /root/Cylon-Raider-Lite/Client_Mac_Targeting.py")
     main()
     return
+
+def mana_toolkit():
+    os.system("python /root/Cylon-Raider-Lite/OutOfMana.py")
+    main()
 def main():
     opt_List = [
         '\n\t#1. AIRMON, start up the capture interface',
@@ -132,7 +145,8 @@ def main():
         '#6. RSF, run Router-Sploit, for exploitation stages of Wi-Fi Hacking',
         '#7. HIDDEN NETWORK DECLOAKER, adapted from Violent Python by TJ OConnor',
         '#8. ARP Injection Test, See if your external wireless card could inject packets',
-        '#9. AIREPLAY, Client MAC Addr Targeting, Target the connected client instead of the AP (may work better in capturing handshake)'
+        '#9. AIREPLAY, Client MAC Addr Targeting, Target the connected client instead of the AP (may work better in capturing handshake)',
+        '#10. MANA-TOOLKIT, run Mana-Toolkit'
     ]
 
     print ("\n\t".join(opt_List))
@@ -165,6 +179,9 @@ def main():
     elif opt_Choice == "9":
         os.system('clear')
         client_mac_targeting()
+    elif opt_Choice == "10":
+        os.system('clear')
+        mana_toolkit()
     else:
         print 'You have entered a invalid option'
         main()

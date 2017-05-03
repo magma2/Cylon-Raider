@@ -4,7 +4,7 @@
 import os
 import socket
 import operator
-# from termcolor import colored
+# #from termcolor import colored
 import sys
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
@@ -12,7 +12,7 @@ sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets windo
 # variable = __import__('module').class.variable
 
 
-# os.system('cat /root/Cylon-Raider/banner_CrackHead.txt')
+# os.system('cat /root/Cylon-Raider-Lite/banner_CrackHead.txt')
 def airmon(): #No need for classes here, just one variable
     capture_Interface = str(raw_input("Enter the wireless INTERFACE that you want to capture with: "))
     cmd_String = "airmon-ng start %s" % capture_Interface
@@ -40,12 +40,12 @@ def airodump():
     opt_Choice = str(raw_input("Enter a OPTION: "))
 
     if opt_Choice == "1":
-        os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/CrackHead_Recon.py; exec bash\"'")
+        os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/CrackHead_Recon.py; exec bash\"'")
         airodump()
     elif opt_Choice == "0":
         main()
     elif opt_Choice == "2":
-        os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/CrackHead_Targeted.py; exec bash\"'")
+        os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/CrackHead_Targeted.py; exec bash\"'")
         airodump()
 
 
@@ -57,12 +57,12 @@ def airodump():
 
 
 def aireplay():
-    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/CrackHead_Replay.py; exec bash\"'")
+    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/CrackHead_Replay.py; exec bash\"'")
     main()
     return
 
 def aircrack():
-    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider/CrackHead_Aircrack.py; exec bash\"'")
+    os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/CrackHead_Aircrack.py; exec bash\"'")
     main()
     return
 

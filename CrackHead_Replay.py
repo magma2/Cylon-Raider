@@ -4,7 +4,7 @@
 import os
 import socket
 import operator
-# from termcolor import colored
+# #from termcolor import colored
 import sys
 
 # this script needs to be rewritten because it is importing a entire class and therefore it will ask all of the questions again.
@@ -36,7 +36,7 @@ import sys
 
 # For now, time to retest to make sure that the basic operations of both work fine
 
-os.system('cat /root/Cylon-Raider/banner_aireplay.txt')
+# os.system('cat /root/Cylon-Raider-Lite/banner_aireplay.txt')
 
 # class aireplay_Parameters(object):
 #
