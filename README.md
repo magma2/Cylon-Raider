@@ -3,11 +3,17 @@ Easy and quick automation of Aircrack-ng "Replay-Attacks", targeting WPA2-PSK en
 
 It can also detect and decloak hidden networks (see UNCLOAK HIDDEN NETWORKS) below
 
-
-
 Lightweight Version of Wifi-Attack-Autoloader for Outdated Releases of Kali Nethunter Devices(Python 2.7.9)
 Designed to Capture the Handshake in Record Time so you can GTFO out of that area!
-Does not support WPS-Enabled Attacks (also known as "Reaver"), see bottom "Why No WPS?"
+
+# RAIDER received a new update on Cinco De Mayo.
+
+1. Substantially simplified menu
+2. Less repetitive keystrokes (we all know how lousy tablet keyboards are)
+3. Auto-saves the LAST target's parameters in a temporary file(s) to switch between targeting listening and starting your replay-attack (w/o having to enter your data again)
+4. Under the hood, substantially improved, and shortened code. In fact most of the modules in the folder are now obsolete. but I keep it around as a resource if I needed something
+
+Raider, will soon be ported to ArmsCommander as a forked-update. 
 
 # Who is this for?
 1. Anyone stuck with a crappy Asus Nexus 7 Tablet (2012), or any other device no longer officially supported by the Kali Nethunter Project. It sure kept my crappy tablet useful!
@@ -58,9 +64,3 @@ Adopted from Violent Python, /root/hiddenNetworkSniffer.sh, give it some time. F
 
 Should be used either with Monitor Mode On, OR, even better, after you cracked the password and logged back into their network. 
 
-# Why No WPS?
-Attacking WPS-Enabled Services means that the admin or owner of the router enabled WPS. You cannot use Reaver against some router that doesnt have WPS Enabled. 
-
-Secondly, the disadvantages of WPS is becoming more of a mainstream knowledge. Less and less wireless APs are employing WPS. 
-
-If you have the fortune of finding a WPS-Enabled AP, then by all means, use Reaver because that is now the best option: http://tools.kali.org/wireless-attacks/reaver
