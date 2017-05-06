@@ -6,7 +6,7 @@ import socket
 import operator
 # #from termcolor import colored
 import sys
-sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
+# sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
 
 # variable = __import__('module').class.variable
@@ -26,7 +26,7 @@ def airmon(): #No need for classes here, just one variable
     print 'Your airodump interface is... wlan1mon'
     print "Remember this string for the next step, AIRODUMP"
     main()
-    return
+    return capture_Interface
 
 
 
@@ -135,18 +135,21 @@ def client_mac_targeting():
 def mana_toolkit():
     os.system("python /root/Cylon-Raider-Lite/OutOfMana.py")
     main()
+
+def replay_attack():
+    os.system('python /root/Cylon-Raider-Lite/Raider_Targeted.py')
+    main()
 def main():
     opt_List = [
         '\n\t#1. AIRMON, start up the capture interface',
-        '#2. AIRODUMP, begin scanning local access points in range and/or capture packets',
-        '#3. AIREPLAY, send deauthorization packets to disconnect target clients and capture the 4-way handshake',
+        '#2. INFORMATION GATHERING, begin scanning local access points in range and/or capture packets',
+        '#3. TARGETED GATHERING + REPLAY ATTACK (w/ Client-Targeting Option), send deauthorization packets to disconnect target clients and capture the 4-way handshake',
         '#4. AIRCRACK, attempt to crack the 4-way handshake with a wordlist (dictionary attack)',
         '#5. HEAVY-RAIDER, run Reaver, the WPS Protection PIN brute forcer',
         '#6. RSF, run Router-Sploit, for exploitation stages of Wi-Fi Hacking',
         '#7. HIDDEN NETWORK DECLOAKER, adapted from Violent Python by TJ OConnor',
         '#8. ARP Injection Test, See if your external wireless card could inject packets',
-        '#9. AIREPLAY, Client MAC Addr Targeting, Target the connected client instead of the AP (may work better in capturing handshake)',
-        '#10. MANA-TOOLKIT, run Mana-Toolkit'
+        '#9. MANA-TOOLKIT, run Mana-Toolkit'
     ]
 
     print ("\n\t".join(opt_List))
@@ -160,7 +163,7 @@ def main():
         airodump()
     elif opt_Choice == "3":
         os.system('clear')
-        aireplay()
+        replay_attack()
     elif opt_Choice == "4":
         os.system('clear')
         aircrack()
@@ -177,9 +180,6 @@ def main():
         os.system('clear')
         injection_test()
     elif opt_Choice == "9":
-        os.system('clear')
-        client_mac_targeting()
-    elif opt_Choice == "10":
         os.system('clear')
         mana_toolkit()
     else:
