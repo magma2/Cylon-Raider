@@ -1,0 +1,8 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+82:2A:A8:81:90:CA, 2017-07-14 00:13:43, 2017-07-14 00:14:12,  1,  54, WPA2, CCMP,PSK,   0,      220,      554,   0.  0.  0.  0,  23, I Believe Wi-fi Can Fly, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+B8:A1:75:E4:CC:B1, 2017-07-14 00:14:01, 2017-07-14 00:14:07, -84,        8, 82:2A:A8:81:90:CA,
+08:05:81:EB:27:8E, 2017-07-14 00:14:00, 2017-07-14 00:14:03, -83,        8, 82:2A:A8:81:90:CA,
+

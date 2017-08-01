@@ -1,0 +1,7 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+00:19:A9:CE:17:01, 2017-07-23 05:18:20, 2017-07-23 05:23:42,  1,  11, WPA2, CCMP TKIP, MGT, -14,     2992,        6,   0.  0.  0.  0,   9, clvmobile, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+50:2E:5C:E6:7E:52, 2017-07-23 05:19:03, 2017-07-23 05:23:39, -44,      211, 00:19:A9:CE:17:01,clvmobile
+

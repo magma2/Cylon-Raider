@@ -1,0 +1,6 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+10:0D:7F:DB:BB:8A, 2017-07-24 11:21:23, 2017-07-24 11:21:40,  1,  54, WPA2 WPA, CCMP TKIP,PSK,   0,       35,        3,   0.  0.  0.  0,   8, Martinez, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+

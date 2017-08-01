@@ -1,0 +1,6 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+B0:7F:B9:A3:7B:EE, 2017-07-28 23:22:21, 2017-07-28 23:23:28,  6,  54, WPA2, CCMP,PSK,   0,      358,        1,   0.  0.  0.  0,  16, NSA Honeypot #35, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+

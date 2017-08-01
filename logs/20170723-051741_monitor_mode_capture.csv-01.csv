@@ -1,0 +1,18 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+1C:B7:2C:DC:57:D3, 2017-07-23 05:17:41, 2017-07-23 05:17:41,  1,  54, WPA2, CCMP,PSK, -80,        2,        0,   0.  0.  0.  0,  10, TV Channel, 
+1C:B7:2C:DC:57:D0, 2017-07-23 05:17:41, 2017-07-23 05:17:41,  1,  54, WPA2, CCMP,PSK, -85,        1,        0,   0.  0.  0.  0,   7, Yum Cha, 
+1C:B7:2C:DC:57:D1, 2017-07-23 05:17:41, 2017-07-23 05:17:41,  1,  54, WPA2, CCMP,PSK, -80,        2,        0,   0.  0.  0.  0,  14, Yum Cha Guest1, 
+1C:B7:2C:DC:57:D2, 2017-07-23 05:17:41, 2017-07-23 05:17:42,  1,  54, WPA2, CCMP,PSK, -82,        3,        0,   0.  0.  0.  0,  14, Yum Cha Guest2, 
+00:19:A9:CE:17:01, 2017-07-23 05:17:41, 2017-07-23 05:17:43,  1,  11, WPA2, CCMP TKIP, MGT, -36,        7,        0,   0.  0.  0.  0,   9, clvmobile, 
+E4:95:6E:41:75:5A, 2017-07-23 05:17:41, 2017-07-23 05:17:41,  1,  54, WPA2 WPA, CCMP,PSK, -88,        2,        0,   0.  0.  0.  0,  13, GL-AR300M-55a, 
+00:23:68:95:10:20, 2017-07-23 05:17:41, 2017-07-23 05:17:41,  1,  54, WPA2, CCMP,PSK, -85,        2,        0,   0.  0.  0.  0,   1, \x00, 
+C8:BE:19:6C:B8:3C, 2017-07-23 05:17:41, 2017-07-23 05:17:43,  1,  54, WPA2, CCMP TKIP,PSK, -59,        6,        0,   0.  0.  0.  0,  13, Kosters Print, 
+A0:A3:E2:6A:3F:E5, 2017-07-23 05:17:44, 2017-07-23 05:17:44, 10,  54, WPA2 WPA, CCMP TKIP,PSK, -91,        1,        0,   0.  0.  0.  0,  15, CenturyLink7663, 
+20:AA:4B:C1:EA:E7, 2017-07-23 05:17:45, 2017-07-23 05:17:45,  6,  54, WPA2 WPA, CCMP TKIP,PSK, -70,        1,        0,   0.  0.  0.  0,   8, Parsley2, 
+24:DE:C6:5B:50:D1, 2017-07-23 05:17:45, 2017-07-23 05:17:45, 11,  54, WPA2, CCMP, MGT, -40,        1,        0,   0.  0.  0.  0,   0, , 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+A0:18:28:B2:23:B5, 2017-07-23 05:17:41, 2017-07-23 05:17:41,  -1,        2, 1C:DE:A7:DF:8C:80,
+74:4A:A4:DA:69:E3, 2017-07-23 05:17:43, 2017-07-23 05:17:43, -89,        2, (not associated) ,1334032324
+

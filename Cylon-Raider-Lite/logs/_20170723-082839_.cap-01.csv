@@ -1,0 +1,7 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+F4:F5:24:7A:8A:C9, 2017-07-23 08:28:47, 2017-07-23 08:29:34, 11,  54, WPA2, CCMP,PSK, -16,      139,        9,   0.  0.  0.  0,  11, XT1609 9330, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+48:D2:24:AE:E7:25, 2017-07-23 08:29:05, 2017-07-23 08:29:08, -86,        7, F4:F5:24:7A:8A:C9,
+

@@ -1,0 +1,7 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+A0:04:60:8B:C5:0D, 2017-07-25 11:16:23, 2017-07-25 11:16:42,  8,  54, WPA2, CCMP,PSK,   0,       35,        4,   0.  0.  0.  0,   9, NETGEAR00, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+44:1C:A8:58:74:1D, 2017-07-25 11:16:35, 2017-07-25 11:16:35,  -1,        1, A0:04:60:8B:C5:0D,
+

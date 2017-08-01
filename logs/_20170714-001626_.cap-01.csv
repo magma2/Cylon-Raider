@@ -1,0 +1,7 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+80:2A:A8:81:90:CA, 2017-07-14 00:16:35, 2017-07-14 00:17:48,  1,  54, WPA2, CCMP,PSK, -73,      427,     1584,   0.  0.  0.  0,  15, Abraham Linksys, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+0C:2A:69:0B:0E:DB, 2017-07-14 00:16:45, 2017-07-14 00:17:48,   0,    13440, 80:2A:A8:81:90:CA,
+

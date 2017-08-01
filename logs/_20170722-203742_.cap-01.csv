@@ -1,0 +1,8 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+EC:0E:C4:0D:2A:62, 2017-07-22 20:37:51, 2017-07-22 20:38:42, 11,  54, WPA2 WPA, CCMP TKIP,PSK, -89,       51,        9,   0.  0.  0.  0,  18, DDW365.0D2A62-2.4G, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+2C:08:8C:8C:BA:68, 2017-07-22 20:37:52, 2017-07-22 20:38:42, -87,       15, EC:0E:C4:0D:2A:62,
+78:FD:94:78:46:DF, 2017-07-22 20:37:59, 2017-07-22 20:37:59,  -1,        2, EC:0E:C4:0D:2A:62,
+

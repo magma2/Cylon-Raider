@@ -1,0 +1,8 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+0C:F4:D5:10:C5:D8, 2017-07-23 08:27:05, 2017-07-23 08:27:45,  3,  54, WPA2, CCMP,PSK,   0,      150,       16,   0.  0.  0.  0,  24, I just died in your arms, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+E0:CB:1D:17:DD:34, 2017-07-23 08:27:14, 2017-07-23 08:27:44,  -1,        7, 0C:F4:D5:10:C5:D8,
+E0:CB:1D:17:DD:84, 2017-07-23 08:27:16, 2017-07-23 08:27:28,  -1,        9, 0C:F4:D5:10:C5:D8,
+
