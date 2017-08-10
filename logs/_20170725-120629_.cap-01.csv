@@ -1,6 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-00:1A:8C:82:8E:A4, 2017-07-25 12:06:37, 2017-07-25 12:07:02,  6,  54, WPA2, CCMP,PSK,   0,      144,        0,   0.  0.  0.  0,  11, jens-iphone, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-

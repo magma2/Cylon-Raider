@@ -26,6 +26,8 @@ proc_String = "python /root/Cylon-Raider-Lite/sniffHidden.py"
 
 def thread_1():
     # import variables
+    os.system("ifconfig wlan1 up")
+    os.system("airmon-ng start wlan1")
     cap_file_dir = '/root/Cylon-Raider-Lite/logs'
     capture_Interface = 'wlan1mon'
     dev_null = open(os.devnull,'w')
@@ -62,14 +64,15 @@ x = threading.Thread(name='thread_1', target=thread_1)
 y = threading.Thread(name='thread_2', target=thread_2)
 
 x.start()
+time.sleep(5)
 y.start()
 
 if KeyboardInterrupt:
     x.terminate()
     y.terminate()
-    os.system('airmon-ng check kill')
-    os.system('airmon-ng stop wlan1mon')
-    os.system('airmon-ng stop wlan0mon')
+    ##os.system('airmon-ng check kill')
+    ##os.system('airmon-ng stop wlan1mon')
+#    os.system('airmon-ng stop wlan0mon')
 
 # #!/usr/bin/env python
 # # coding=UTF-8

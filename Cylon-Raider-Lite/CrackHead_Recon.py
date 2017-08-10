@@ -67,7 +67,7 @@ y.start()
 if KeyboardInterrupt:
     x.terminate()
     y.terminate()
-    os.system('airmon-ng check kill')
+    #os.system('airmon-ng check kill')
     os.system('airmon-ng stop wlan1mon')
     os.system('airmon-ng stop wlan0mon')
 

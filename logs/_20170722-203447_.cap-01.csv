@@ -1,6 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-62:6D:C7:8B:EF:20, 2017-07-22 20:34:55, 2017-07-22 20:37:31,  6,  54, WPA2, CCMP,PSK,   0,      483,        0,   0.  0.  0.  0,  16, DIRECT-Me-BRAVIA, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-

@@ -1,9 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-A4:13:4E:41:CA:91, 2017-05-28 19:51:39, 2017-05-28 19:54:39,  6,  54, WPA, CCMP,PSK, -77,      190,     2402,   0.  0.  0.  0,   8, FERRAROS, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-CC:29:F5:61:8B:62, 2017-05-28 19:51:43, 2017-05-28 19:54:31, -88,    16783, A4:13:4E:41:CA:91,
-18:EE:69:47:01:2D, 2017-05-28 19:51:49, 2017-05-28 19:54:34, -88,     4642, A4:13:4E:41:CA:91,
-70:A2:B3:BB:75:75, 2017-05-28 19:53:15, 2017-05-28 19:53:58, -85,        3, A4:13:4E:41:CA:91,
-

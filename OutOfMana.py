@@ -15,7 +15,7 @@ def start_mana():
 
     # Start mana toolkit
     os.system('airmon-ng stop wlan1mon')
-    os.system('airmon-ng check kill') # kills all instances of monitor mode to let Mana work
+    #os.system('airmon-ng check kill') # kills all instances of monitor mode to let Mana work
     os.system('chmod 777 /usr/share/mana-toolkit/run-mana') # chmods the mana toolkit scripts if it hasn't been done already already
     # os.system('/usr/share/mana-toolkit/run-mana/start-nat-full.sh') # Runs the main script
     # # start TCP dump

@@ -34,7 +34,7 @@ DEVNULL = open(os.devnull, 'w')
 # sys.stdout = DN
 
 def airmon():
-    os.system('airmon-ng check kill')
+    #os.system('airmon-ng check kill')
     os.system('airmon-ng wlan1 start')
     main()
     return

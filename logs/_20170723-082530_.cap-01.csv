@@ -1,8 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-0C:F4:D5:50:C5:D8, 2017-07-23 08:25:39, 2017-07-23 08:26:39,  3,  54, WPA2, CCMP,PSK,   0,      226,      351,   0.  0.  0.  0,   7, ZMobile, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-20:D1:60:11:ED:41, 2017-07-23 08:25:40, 2017-07-23 08:26:39,  -1,      323, 0C:F4:D5:50:C5:D8,
-74:75:48:EC:D4:21, 2017-07-23 08:25:43, 2017-07-23 08:26:38,  -1,       28, 0C:F4:D5:50:C5:D8,
-

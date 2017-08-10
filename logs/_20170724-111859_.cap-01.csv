@@ -1,8 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-78:24:AF:ED:AB:A0, 2017-07-24 11:19:08, 2017-07-24 11:19:50,  6,  54, WPA2, CCMP,PSK,   0,      368,       33,   0.  0.  0.  0,  15, Prettyfly4awifi, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-E8:61:7E:BF:AE:49, 2017-07-24 11:19:13, 2017-07-24 11:19:46, -67,       16, 78:24:AF:ED:AB:A0,
-14:1F:78:AF:34:56, 2017-07-24 11:19:17, 2017-07-24 11:19:17, -65,        2, 78:24:AF:ED:AB:A0,Prettyfly4awifi
-

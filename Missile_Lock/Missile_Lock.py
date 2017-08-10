@@ -16,7 +16,7 @@ def green(string):
     return
 
 def monitor_mode():
-    os.system('airmon-ng check kill')
+    #os.system('airmon-ng check kill')
     os.system('ifconfig wlan1 down')
     time.sleep(5)
     os.system('ifconfig wlan1 up')

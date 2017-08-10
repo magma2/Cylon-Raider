@@ -62,7 +62,7 @@ def main():
         os.system('python /root/Cylon-Raider-Lite/Cylon_Raider_Main.py')
     elif opt_Choice == "1":
         os.system('clear')
-        os.system('airmon-ng check kill')
+        #os.system('airmon-ng check kill')
         os.system('airmon-ng start wlan1')
         main()
     elif opt_Choice == "2":

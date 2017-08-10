@@ -1,8 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-2A:A0:2B:77:66:E6, 2017-07-25 12:17:51, 2017-07-25 12:18:16, 11,  54, WPA2, CCMP,PSK, -64,      128,      116,   0.  0.  0.  0,   6, iPhone, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-78:92:9C:E4:29:1A, 2017-07-25 12:17:53, 2017-07-25 12:18:16, -71,      193, 2A:A0:2B:77:66:E6,
-80:ED:2C:D3:00:0B, 2017-07-25 12:17:51, 2017-07-25 12:18:10, -69,       14, 2A:A0:2B:77:66:E6,
-

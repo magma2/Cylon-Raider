@@ -1,6 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-70:AF:6A:7E:52:2A, 2017-07-28 19:28:03, 2017-07-28 19:28:48,  6,  54, WPA2, CCMP,PSK,   0,      230,       47,   0.  0.  0.  0,  14, 360WiFi-7E522A, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-

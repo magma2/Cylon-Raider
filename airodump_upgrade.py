@@ -175,7 +175,7 @@ def build_cmd_str_and_begin(target_search_regex, save_file, mon_mode_interface, 
     if KeyboardInterrupt:
 
         stop_mon_mode_str = "airmon-ng stop %s" % str(mon_mode_interface)
-        os.system('airmon-ng check kill')
+        #os.system('airmon-ng check kill')
         os.system('killall tcpdump')
         os.system(stop_mon_mode_str)
         os.system('cat /root/Cylon-Raider-Lite/logs/*.csv > /sdcard/Cylon_Raider_Recon.txt')

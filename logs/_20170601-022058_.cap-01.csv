@@ -1,6 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-50:6A:03:BB:BB:D5, 2017-06-01 02:21:06, 2017-06-01 02:23:55,  1,  54, WPA2, CCMP,PSK,   0,       44,      670,   0.  0.  0.  0,  18, Penidari New_2GEXT, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-

@@ -1,7 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-BE:9F:EF:5C:58:51, 2017-07-25 12:01:52, 2017-07-25 12:02:29,  6,  54, WPA2, CCMP,PSK,   0,      110,       17,   0.  0.  0.  0,  17, xiaoyu\xE2..s iPhone, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-A4:D1:8C:EB:01:70, 2017-07-25 12:01:52, 2017-07-25 12:02:28, -67,       59, BE:9F:EF:5C:58:51,
-

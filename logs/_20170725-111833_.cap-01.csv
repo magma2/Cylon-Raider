@@ -1,7 +1,0 @@
-
-BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-D0:57:85:7D:7A:97, 2017-07-25 11:18:41, 2017-07-25 11:19:36, 11,  54, WPA2, CCMP TKIP,PSK,   0,       27,        7,   0.  0.  0.  0,  10, CorpTech99, 
-
-Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-0C:84:DC:03:35:45, 2017-07-25 11:18:46, 2017-07-25 11:18:57, -90,        8, D0:57:85:7D:7A:97,
-
